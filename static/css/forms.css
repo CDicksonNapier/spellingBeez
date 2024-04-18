@@ -1,0 +1,328 @@
+/* Sign up and login forms  */
+/* Sign up first  */
+/* Starts at small screens 425px and works up to larger screens such as desktops  */
+.signup {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-content {
+  width: 100%;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: var(--rounded-edge);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Form */
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+}
+/* Form Header */
+form h2 {
+  font-size: var(--header-font-size-alt);
+  margin-bottom: 20px;
+  color: var(--banner-color-one);
+}
+/* Form Inputs */
+form input {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: var(--rounded-edge-alt);
+}
+/* Form label  */
+form label {
+  font-size: 1.25rem;
+  color: var(--font-color-two);
+}
+/* Button for the form  */
+form button {
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  background-color: var(--font-color-two);
+  color: #fff;
+  border-radius: var(--rounded-edge-alt);
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+/* The block that holds a list of reasons to sign up or login  */
+.reasonsBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  background-color: var(--banner-color-one);
+  color: var(--font-color-one);
+  width: 100%;
+}
+/* reasons header */
+.reasonsBlock h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--font-color-one);
+}
+/* Reasons ul  */
+.reasonsBlock ul {
+  list-style: disc;
+  display: block;
+}
+/* Reasons li  */
+.reasonsBlock ul li {
+  color: white;
+  margin-left: 3rem;
+  font-size: 1rem;
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+/* Login Page */
+.login {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* login content */
+.login-content {
+  width: 100%;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: var(--rounded-edge);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+/* login form */
+.login-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+/* login form header */
+.login-form h2 {
+  font-size: var(--header-font-size-alt);
+  margin-bottom: 20px;
+  color: var(--banner-color-one);
+}
+/* login form inputs */
+.login-form input {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: var(--rounded-edge-alt);
+}
+/* login form label */
+.login-form label {
+  font-size: 1.25rem;
+}
+/* login form button */
+.login-form button {
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  background-color: var(--banner-color-one);
+  color: #fff;
+  border-radius: var(--rounded-edge-alt);
+  cursor: pointer;
+}
+/* Error message display  */
+.error {
+  color: rgb(218, 18, 18);
+  font-size: 1.15rem;
+  margin: 10px 0;
+  position: absolute;
+  bottom: 35%;
+}
+/* Success messgage display */
+.signup-success {
+  color: green;
+  font-size: 1.15rem;
+  margin: 10px 0;
+  position: absolute;
+  top: 43%;
+  left: 60%;
+}
+
+/* Media Queries */
+
+/* For screens with a minimum width of 768px */
+@media screen and (min-width: 768px) {
+  .signup-content {
+    width: 700px;
+    margin-top: 30px;
+  }
+
+  .signup-content form {
+    width: 100%;
+  }
+
+  .reasonsBlock {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .signup-success {
+    color: green;
+    font-size: 1rem;
+    margin: 10px 0;
+    position: absolute;
+    top: 44%;
+    left: 56%;
+  }
+}
+
+/* For screens with a minimum width of 1024px */
+@media screen and (min-width: 1024px) {
+  .signup-content {
+    width: 950px;
+    flex-direction: row;
+  }
+
+  .signup-content form {
+    width: 40%;
+  }
+
+  .reasonsBlock {
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin-left: 10%;
+  }
+
+  .reasonsBlock h2 {
+    font-size: 2rem;
+    margin-left: 1rem;
+  }
+
+  .reasonsBlock ul {
+    font-size: 1.25rem;
+    margin-left: 1rem;
+  }
+
+  .login-content {
+    flex-direction: row;
+    width: 950px;
+  }
+
+  .login-form {
+    width: 40%;
+    margin-left: 5%;
+  }
+
+  .error {
+    bottom: 27%;
+  }
+
+  .signup-success {
+    top: 57%;
+    left: 32%;
+  }
+}
+
+/* For screens with a minimum width of 1440px */
+@media screen and (min-width: 1440px) {
+  /* Sign up page content */
+  .signup-content {
+    width: 1000px;
+    flex-direction: row;
+  }
+  /* Reasons Block - has the list of reasons to sign up or login  */
+  .reasonsBlock {
+    flex-direction: column;
+    justify-content: center;
+  }
+  /* Login page content */
+  .login-content {
+    width: 1000px;
+    flex-direction: row;
+  }
+  /* Error display */
+  .error {
+    bottom: 38%;
+    left: 38%;
+    font-size: 1rem;
+  }
+  /* Success display */
+  .signup-success {
+    top: 57%;
+    left: 35%;
+  }
+}
+
+/* For screens with a minimum width of 1920px */
+@media screen and (min-width: 1920px) {
+  /* Signup Page Content */
+  .signup-content {
+    width: 1500px;
+    height: 60vh;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  /* Login Page Content */
+  .login-content {
+    width: 1500px;
+    height: 60vh;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  /* Login form  */
+  .login-form {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  /* Login Reasons Block */
+  .login-content .reasonsBlock {
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 80%;
+  }
+  /* Signup Reasons Block Header */
+  .signup-content .reasonsBlock {
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+  }
+  /* Reasons Block Header */
+  .reasonsBlock h2 {
+    font-size: 2.5rem;
+    margin-left: 2.5rem;
+  }
+  /* Reasons Block List */
+  .reasonsBlock ul {
+    font-size: 1.5rem;
+    margin-left: 2.5rem;
+  }
+  /*  Form */
+  form {
+    width: 50%;
+  }
+  /* Error Display */
+  .error {
+    font-size: 1rem;
+    bottom: 29%;
+    left: 20%;
+  }
+  /* Success Display */
+  .signup-success {
+    top: 56%;
+    left: 37%;
+  }
+}

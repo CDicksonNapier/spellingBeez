@@ -1,0 +1,57 @@
+/* Global style used through out the site.  */
+:root {
+    --banner-color-one: #346d96;
+    --banner-color-two: #6B41A1;
+    --off-white: #E2E2E2;
+    --font-color-one: #fff;
+    --font-color-two: #000;
+    --header-font-size: 2rem;
+    --header-font-size-alt: 1.75rem;
+    --paragraph-text: .8rem;
+    --rounded-edge: 10px;
+    --rounded-edge-alt: 5px;
+  }
+  /* Global Fonts  */
+  @font-face {
+    font-family: 'Araboto';
+    src: url("../fonts/Araboto-Normal-400.ttf");
+  }
+  
+  @font-face {
+    font-family: 'Montserrat';
+    src: url("../fonts/Montserrat-Regular.ttf");
+  }
+  
+  /* screen size max-width 375px */
+  html {
+    scroll-behavior: smooth;
+  }
+  /* Reseting the margin and padding through out  */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+  }
+  /* Global Body Value */
+  body {
+    min-height: 100vh;
+    width: 100%;
+    scroll-snap-type: x mandatory;
+    overflow-x: hidden;
+  }
+  /* Global Section Value */
+  section {
+    height: 100vh;
+    width: 100%;
+  }
+
+  .container-fluid {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+  }
+  

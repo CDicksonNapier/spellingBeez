@@ -1,0 +1,1000 @@
+/* Mobile screen first 450px  */
+/* Games Page Section */
+#gamesHome {
+  height: 100vh;
+}
+/* Main Banner  */
+.gamesBanner {
+  height: 60vh;
+  width: 100%;
+  background-color: var(--banner-color-one);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+  border-radius: var(--rounded-edge);
+}
+/* Banner Image Block */
+.games-img-block {
+  height: 60%;
+  width: 90%;
+  background-image: url("../images/spaceShip.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+/* Banner text */
+.banner-text {
+  height: 40%;
+  width: 90%;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  align-items: start;
+  text-align: center;
+}
+/* Banner Text Header */
+.banner-text h1 {
+  font-size: 2rem;
+  margin-top: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: var(--font-color-one);
+}
+/* Games Page Breaker Text */
+#gamesHome h2 {
+  font-size: 1.4rem;
+  margin-top: 20px;
+  color: var(--font-color-two);
+  text-align: center;
+}
+/* Scroll Down image - will try and animate */
+.scroll-down {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  border: 5px solid var(--banner-color-one);
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Scroll down Icon */
+.scroll-down i {
+  font-size: 2rem;
+  color: var(--banner-color-one);
+}
+/* How to play the games Section */
+#howTo {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* How to header text */
+#howTo h2 {
+  font-size: 1.4rem;
+  margin-top: 10px;
+  color: var(--font-color-two);
+  text-align: center;
+  font-weight: 600;
+}
+/* The grid of images that shows users how to play the games */
+#howTo .howTo-grid {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 6px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+/* How to cards  */
+.howTo-grid .howTo-grid-card {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  border-radius: var(--rounded-edge);
+  margin-top: 10px;
+}
+/* Image styling for the cards */
+.howTo-grid .howTo-grid-img {
+  height: 70%;
+  width: 100%;
+  border-top-left-radius: var(--rounded-edge);
+  border-top-right-radius: var(--rounded-edge);
+}
+/* Image for the cards */
+.howTo-grid-img .img1 {
+  height: 100%;
+  width: 100%;
+  background-image: url("../images/find-game.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--rounded-edge);
+}
+/* Image for the cards */
+.howTo-grid-img .img2 {
+  height: 100%;
+  width: 100%;
+  background-image: url("../images/play-now.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--rounded-edge);
+}
+/* Image for the cards */
+.howTo-grid-img .img3 {
+  height: 100%;
+  width: 100%;
+  background-image: url("../images/pickObject.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--rounded-edge);
+}
+/* Image for the cards */
+.howTo-grid-img .img4 {
+  height: 100%;
+  width: 100%;
+  background-image: url("../images/audio.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--rounded-edge);
+}
+/* Image for the cards */
+.howTo-grid-img .img5 {
+  height: 100%;
+  width: 100%;
+  background-image: url("../images/dragLetters.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--rounded-edge);
+}
+/* Image for the cards */
+.howTo-grid-img .img6 {
+  height: 100%;
+  width: 100%;
+  background-image: url("../images/earn-rewards.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--rounded-edge);
+}
+/* The text block under the images */
+.howTo-grid .howTo-grid-txtBox {
+  height: 30%;
+  width: 100%;
+}
+/* text block header   */
+.howTo-grid .howTo-grid-txtBox h3 {
+  font-size: 1rem;
+  margin-top: 5px;
+  color: var(--font-color-two);
+  text-align: center;
+  font-weight: 600;
+}
+/* Text block paragraph text */
+.howTo-grid .howTo-grid-txtBox p {
+  font-size: 0.68rem;
+  margin-top: 2.5px;
+  color: var(--font-color-two);
+  text-align: center;
+  font-weight: 500;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+/* Banner section   */
+#bannerGraphic {
+  height: 100vh;
+  width: 100%;
+}
+/* The Banner for this section  */
+.banner-sloth {
+  height: 70%;
+  width: 100%;
+  background-color: var(--banner-color-two);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  border-radius: var(--rounded-edge);
+  margin-top: 100px;
+}
+/* The image for the banner */
+.banner-sloth .banner-sloth-img {
+  height: 60%;
+  width: 100%;
+  margin-top: 30px;
+  background-image: url("../images/sloth-Playing-Game.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  /* background-color: #ec8686;    */
+}
+/* Text block for the banner */
+.banner-sloth .banner-text {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10px;
+}
+/* Header text for the banner  */
+.banner-sloth .banner-text h3 {
+  font-size: 1.9rem;
+  margin-top: 5px;
+  color: var(--font-color-one);
+  text-align: center;
+  font-weight: 400;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+/* Scroll Down banner 2 down arrows wrapped around a line of text */
+.scroll-down-banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  margin-top: 30px;
+  height: 70px;
+  width: 100%;
+}
+
+.scroll-down-two {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 3px solid var(--banner-color-one);
+}
+
+.scroll-down-banner .scroll-down {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 5px solid var(--banner-color-two);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+/* Icon */
+.scroll-down-banner .scroll-down-two i {
+  font-size: 1.52rem;
+  color: var(--banner-color-one);
+}
+/* Line of text */
+.scroll-down-banner h4 {
+  font-size: 1.5rem;
+  color: var(--banner-color-one);
+  text-align: center;
+  font-weight: 500;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+/* Games list Section  */
+#gamesList {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* Title for this section  */
+#gamesList .title {
+  height: 10%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+/* Title Header  */
+#gamesList .title h3 {
+  font-size: 1.9rem;
+  margin-top: 5px;
+  color: var(--font-color-two);
+  text-align: center;
+  font-weight: 600;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+/* The games list set as a grid of 2 rows and 3 columns  */
+.games-list {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+/* Link to the games  */
+.games-list a {
+  text-decoration: none;
+}
+/* Singular cards for the games list  */
+.games-list .gameList-card {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  border-radius: var(--rounded-edge);
+}
+/* Image block for the card  */
+.games-list .gameList-card .game-card-img-block {
+  height: 60%;
+  width: 100%;
+  border-radius: var(--rounded-edge);
+}
+/* The grid image styling */
+.game-card-image {
+  height: 100%;
+  width: 100%;
+}
+/* Image 1  */
+.img1 {
+  background-image: url("../images/Consellations.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--rounded-edge);
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+    /* Image 2 */
+.img2 {
+  background-image: url("../images/Little-dinosaur.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--rounded-edge);
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+/* Image 3  */
+.img3 {
+  background-image: url("../images/aliens.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--rounded-edge);
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+/* Image 4 */
+.img4 {
+  background-image: url("../images/Mermaid.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--rounded-edge);
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+/* Image 5 */
+.img5 {
+  background-image: url("../images/Astronaut.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--rounded-edge);
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+/* Image 6 */
+.img6 {
+  background-image: url("../images/Cowboys.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--rounded-edge);
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+/* Image 7 */
+.img7 {
+  background-image: url("../images/Bedroom.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--rounded-edge);
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+/* Image 8 */
+.img8 {
+  background-image: url("../images/beach.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--rounded-edge);
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+/* Image 9 */
+.img9 {
+  background-image: url("../images/imagination.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--rounded-edge);
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+/* image 10 */
+.img10 {
+  background-image: url("../images/savethebees.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--rounded-edge);
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+/* Image 11 */
+.img11 {
+  background-image: url("../images/kitchen-fun.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--rounded-edge);
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+/* Image 12 */
+.img12 {
+  background-image: url("../images/animal-Buddies.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--rounded-edge);
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+/* The Grid card text block */
+.game-card-txt {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 2px;
+}
+/* The grid card text block header  */
+.game-card-txt h4 {
+  font-size: 1rem;
+  color: var(--font-color-two);
+  font-weight: 600;
+  margin-top: 3px;
+}
+/* The grid card text block paragraph  */
+.game-card-txt p {
+  font-size: 0.7rem;
+  color: var(--font-color-two);
+}
+/* The kids Control Section */
+#kidControl {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* The full length block displayed just before the section  */
+#kidControl .full-length-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 150px;
+  width: 100%;
+  background-color: var(--banner-color-two);
+  text-align: center;
+}
+/* Text header in the section  */
+#kidControl .full-length-block h1 {
+  font-size: 2rem;
+  color: var(--font-color-one);
+  font-weight: 500;
+  margin-top: 20px;
+}
+/* The paragraph text in the block  */
+#kidControl .full-length-block p {
+  font-size: 1.2rem;
+  color: var(--font-color-one);
+  font-weight: 400;
+  margin-top: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* Wave Purple  only appears in small screens*/
+.wavePurple {
+  width: 100%;
+  height: 100px;
+  background-image: url("../images/wavePurple.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Play Their Way Banner  */
+.play-their-way {
+  height: 70vh;
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+/* Image block for the banne r */
+.img-block1 {
+  height: 60%;
+  width: 100%;
+  background-image: url("../images/laptop.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+/* Text block for the banner  */
+.play-their-way .play-their-way-text {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 10px;
+}
+/* Header text in the banner  */
+.play-their-way .play-their-way-text h2 {
+  font-size: 2rem;
+  color: var(--font-color-two);
+  font-weight: 600;
+  margin-top: 20px;
+}
+/* Paragraph text in the banner  */
+.play-their-way .play-their-way-text p {
+  font-size: 1.5rem;
+  color: var(--font-color-two);
+  font-weight: 400;
+  margin-top: 0;
+}
+/* The banner play button leads to the games   */
+ .startPlayingBtn {
+  height: 50px;
+  width: 250px;
+  background-color: var(--banner-color-one);
+  border-radius: var(--rounded-edge);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: var(--font-color-one);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* Kid Control Two section */
+#kidControlTwo {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* The banner for this section  */
+.beeRewardBlock {
+  height: 70vh;
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+/* image block for the banner  */
+.beeReward-img-block {
+  height: 60%;
+  width: 100%;
+  background-image: url("../images/bees.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+/* Text block in this banner  */
+.beeReward-text {
+  height: 40%;
+  width: 90%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 10px;
+}
+/* Banner Header  */
+.beeReward-text h2 {
+  font-size: 2rem;
+  color: var(--font-color-two);
+  font-weight: 600;
+  margin-top: 20px;
+}
+/* Banner "paragraph text" */
+.beeReward-text h3 {
+  font-size: 1.5rem;
+  color: var(--font-color-two);
+  font-weight: 400;
+  margin-top: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+/* Rewards page button - leads to an error page as this has not been set up yet  */
+.rewardsPageBtn {
+  height: 50px;
+  width: 250px;
+  background-color: var(--banner-color-one);
+  border-radius: var(--rounded-edge);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: var(--font-color-one);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* Wave Purple Up */
+.wavePurpleUp {
+  width: 100%;
+  height: 100px;
+  background-image: url("../images/wavePurpleUp.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Full Length Block Two */
+.full-length-blockTwo {
+  height: 100px;
+  width: 100%;
+  background-color: var(--banner-color-two);
+}
+
+
+/* End of the small Screen styling */
+/* Media Queries tablet size */
+@media (min-width: 768px) {
+    /* Games banner Image */
+  .gamesBanner .games-img-block {
+    margin-top: 50px;
+  }
+    /* Banner text */
+  .gamesBanner .banner-text {
+    margin-top: 20px;
+  }
+    /* Banner text header */
+  #gamesHome h2 {
+    margin-top: 30px;
+  }
+    /* Scroll down image */
+  .scroll-down {
+    margin-top: 30px;
+  }
+  /* Wave */
+  .wavePurple {
+    display: none;
+  }
+  /* wave up  */
+  .wavePurpleUp {
+    display: none;
+  }
+    /* How to play the games section grid */
+  #howTo .howTo-grid {
+    grid-gap: 5px;
+  }
+    /* How to play the games section cards header */
+  .howTo-grid .howTo-grid-txtBox h3 {
+    font-size: 1.25rem;
+  }
+    /* How to play the games section cards paragraph text */
+  .howTo-grid .howTo-grid-txtBox p {
+    font-size: 0.8rem;
+  }
+    /* Banner section banner */
+  .banner-sloth {
+    margin-top: 100px;
+  }
+    /* Banner section text */
+  .banner-sloth .banner-text h3 {
+    font-size: 2rem;
+  }
+}
+/* End of tablet styling  */
+/* Media Queries for laptop */
+@media (min-width: 1024px) {
+    /* Games banner */
+  .gamesBanner {
+    flex-direction: row-reverse;
+  }
+    /* Games banner image */
+  .gamesBanner .games-img-block {
+    height: 100%;
+    width: 50%;
+    margin-top: 0;
+  } 
+    /* Games banner text */
+  .gamesBanner .banner-text {
+    height: 100%;
+    width: 50%;
+    align-items: center;
+    text-align: left;
+  }
+    /* Games banner text header */
+  #gamesHome h2 {
+    font-size: 1.8rem;
+  }
+    /* How to play the games section */
+  #howTo h2 {
+    font-size: 1.8rem;
+  }
+    /* How to play the games */
+  #howTo .container-fluid {
+    width: 95%;
+  }
+    /* How to play the games section grid */
+  #howTo .howTo-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+    /* Games list */
+  .games-list {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+  /* Games list Images */
+  .game-card-img-block {
+    height: 50%;
+  }
+  /* Section  */
+  #kidControl {
+    /* background-color: aqua; */
+    height: 80vh;
+  }
+  /* Banner  */
+  .banner-sloth {
+    flex-direction: row-reverse;
+    height: 60%;
+    width: 95%;
+  }
+    /* Banner Image */
+  .banner-sloth .banner-sloth-img {
+    height: 100%;
+    width: 40%;
+    margin-top: 0;
+  }
+    /* Banner text */
+  .banner-sloth .banner-text {
+    height: 100%;
+    width: 50%;
+    margin-top: 0;
+    justify-content: center;
+  }
+    /* Banner text header */
+  .banner-sloth .banner-text h3 {
+    font-size: 2.3rem;
+    text-align: left;
+  }
+  /*  */
+  .play-their-way {
+    flex-direction: row-reverse;
+    height: 60vh;
+  }
+    /* Image block */
+  .play-their-way .img-block1 {
+    height: 100%;
+    width: 50%;
+  }
+    /* Text block */
+  .play-their-way .play-their-way-text {
+    height: 100%;
+    width: 50%;
+    margin-top: 30%;
+    margin-left: 30px;
+    justify-content: start;
+    align-items: start;
+    text-align: left;
+  }
+    /* Header text */
+  .play-their-way .play-their-way-text h2 {
+    font-size: 2.6rem;
+    margin-left: 20px;
+  }
+    /* Paragraph text */
+  .play-their-way .play-their-way-text p {
+    font-size: 1.75rem;
+    margin-left: 20px;
+  }
+    /* Play button */
+  .play-their-way .play-their-way-text .startPlayingBtn {
+    margin-left: 20px;
+  }
+    /* Kid Control Two */
+  #kidControlTwo {
+    height: 100vh;
+  }
+    /* Banner */
+  .beeRewardBlock {
+    flex-direction: row;
+    height: 60vh;
+    margin-top: 0;
+  }
+    /* Image block */
+  .beeRewardBlock .beeReward-img-block {
+    height: 100%;
+    width: 50%;
+    margin-left: 30px;
+  }
+    /* Text block */
+  .beeRewardBlock .beeReward-text {
+    height: 100%;
+    width: 50%;
+    margin-top: 30%;
+    justify-content: start;
+    align-items: end;
+    text-align: right;
+    margin-right: 30px;
+  }
+    /* Header text */
+  .beeRewardBlock .beeReward-text h2 {
+    font-size: 2.6rem;
+    margin-right: 20px;
+  }
+    /* Paragraph text */
+  .beeRewardBlock .beeReward-text p {
+    font-size: 1.75rem;
+    margin-right: 20px;
+  }
+    /* Rewards page button */
+  .beeRewardBlock .beeReward-text .rewardsPageBtn {
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+    /*Games banner  */
+  .gamesBanner {
+    height: 60vh;
+  }
+    /* Banner image */
+  .gamesBanner .games-img-block {
+    height: 100%;
+    width: 40%;
+    margin-top: 0;
+  }
+    /* Banner text */
+  .gamesBanner .banner-text {
+    height: 100%;
+    width: 50%;
+    text-align: left;
+    margin-left: 40px;
+  }
+    /* Banner text header */
+  .gamesBanner .banner-text h1 {
+    font-size: 2.3rem;
+  }
+    /* Games page breaker text */
+  #gamesHome h2 {
+    font-size: 2rem;
+    margin-top: 40px;
+  }
+    /* Scroll down image */
+  .scroll-down {
+    margin-top: 30px;
+  }
+}
+/* Large screen */
+@media (min-width: 1920px) {
+    /* Games banner */
+  #gamesHome .gamesBanner {
+    width: 95%;
+  }
+   /* Games list */
+  .games-list {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+    width: 95%;
+  }
+    /* Games list cards */
+  #kidControl .play-their-way {
+    height: 90vh;
+    width: 90%;
+    flex-direction: row-reverse;
+  }
+    /* Image block */
+  .play-their-way .img-block1 {
+    height: 100%;
+    width: 40%;
+  }
+    /* Text block */
+  .play-their-way .play-their-way-text {
+    height: 100%;
+    width: 50%;
+    margin-top: 30%;
+    margin-left: 60px;
+    justify-content: start;
+    align-items: start;
+    text-align: left;
+  }
+    
+ /*  */
+  #kidControlTwo .beeRewardBlock {
+    height: 90vh;
+    width: 90%;
+    flex-direction: row;
+  }
+
+  .beeRewardBlock .beeReward-img-block {
+    height: 100%;
+    width: 40%;
+    margin-left: 60px;
+  }
+
+  .beeRewardBlock .beeReward-text {
+    height: 100%;
+    width: 50%;
+    margin-top: 30%;
+    justify-content: start;
+    align-items: end;
+    text-align: right;
+    margin-right: 60px;
+  }
+}

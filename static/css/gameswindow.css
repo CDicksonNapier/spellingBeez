@@ -1,0 +1,258 @@
+/* The playable game screen */
+#gameWindow {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Tagline styling */
+.tagLine {
+    height: 20px;
+    width: 100%;
+    background-color: red;
+}
+
+/* Styling for iframe */
+iframe {
+    height: 100%;
+    width: 100%;
+    border: none;
+    display: none;
+}
+
+/* Styling for incompatible text */
+.incompatableText {
+    font-size: 20px;
+    color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Hide ul element */
+ul {
+    display: none;
+}
+
+/* Media query for screens with minimum width of 768px */
+@media (min-width: 768px) {
+    /* Show iframe and adjust its dimensions */
+    iframe {
+        display: flex;
+        width: 700px;
+        height: 400px;
+    }
+
+    /* Hide incompatible text */
+    .incompatableText {
+        display: none;
+    }
+
+    /* Styling for game window */
+    .window {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    /* Styling for tagline */
+    .tagline {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    /* Styling for game tag */
+    .tagline .gameTag {
+        font-size: 2rem;
+        color: black;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    /* Styling for h3 element */
+    h3 {
+        margin-top: 20px;
+        color: black;
+        font-weight: 600;
+    }
+
+    /* Styling for ul element */
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+
+    /* Styling for li elements within ul */
+    ul li {
+        margin: 0 10px;
+        color: black;
+    }
+
+    /* Styling for game list */
+    .gamePage-GameList {
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 10px;
+    }
+
+    /* Styling for game cards */
+    .gamePage-Cards {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    /* Styling for individual game card */
+    .gamePage-Card {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        background-color: #f2f2f2;
+        border-radius: 10px;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    /* Background image for first game card */
+    .gamePage-Card:nth-child(1) {
+        background-image: url(../images/imagination.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    /* Background image for second game card */
+    .gamePage-Card:nth-child(2) {
+        background-image: url(../images/animal-Buddies.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    /* Background image for third game card */
+    .gamePage-Card:nth-child(3) {
+        background-image: url(../images/kitchen-fun.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    /* Background image for fourth game card */
+    .gamePage-Card:nth-child(4) {
+        background-image: url(../images/beach.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    /* Styling for game card links */
+    .gamePage-Cards a {
+        text-decoration: none;
+    }
+
+    /* Styling for game card overlay */
+    .gamePage-Card .gamePage-CardOverlay {
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, .65);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+    }
+
+    /* Styling for game card overlay text */
+    .gamePage-Card .gamePage-CardOverlay h2 {
+        color: white;
+        font-size: .81rem;
+        font-weight: 400;
+        text-align: center;
+        text-decoration: none;
+    }
+}
+
+/* Media query for screens with minimum width of 1024px */
+@media (min-width: 1024px) {
+    /* Adjust iframe dimensions */
+    iframe {
+        width: 960px;
+        height: 600px;
+    }
+
+    /* Adjust game tag font size and margin */
+    .tagline .gameTag {
+        font-size: 2rem;
+        margin-top: 0;
+    }
+
+    /* Adjust h3 margin */
+    h3 {
+        margin-top: 10px;
+    }
+
+    /* Adjust ul margin */
+    ul {
+        margin-top: 0;
+    }
+}
+
+/* Media query for screens with minimum width of 1440px */
+@media (min-width: 1440px) {
+    /* Adjust iframe dimensions and margin */
+    iframe {
+        width: 960px;
+        height: 600px;
+        margin-top: 0;
+    }
+
+    /* Adjust game tag font size */
+    .tagline .gameTag {
+        font-size: 2rem;
+    }
+
+    /* Adjust ul margin */
+    ul {
+        margin-top: 5px;
+    }
+
+    /* Adjust game card dimensions */
+    .gamePage-Card {
+        width: 150px;
+        height: 150px;
+        margin-top: 0;
+    }
+}
+
+/* Media query for screens with minimum width of 1920px */
+@media (min-width: 1920px) {
+    /* Adjust iframe dimensions */
+    iframe {
+        height: 700px;
+        width: 1000px;
+    }
+}

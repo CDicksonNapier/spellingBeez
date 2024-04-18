@@ -1,0 +1,325 @@
+/* Game List page - starting with mobile first 480px */
+/* Set the height and width of the gameList container */
+#gameList {
+    height: 100vh;
+    width: 100%;
+}
+
+/* Styling for the game list */
+.game-list {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    margin-top: 100px;
+}
+
+/* Styling for the game list title */
+.game-list h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--banner-color-one);
+}
+
+/* Styling for the game list cards container */
+.game-list-cards {
+    height: 80%;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    margin-right: 5px;
+}
+
+/* Styling for each game list card */
+.game-list .game-list-card {
+    height: 100px;
+    width: 100px;
+    background-color: #000000;
+    border-radius: 10px;
+    align-self: flex-start;
+    cursor: pointer;
+    margin-left: 14px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--font-color-one);
+}
+
+/* Styling for the overlay on each game list card */
+.game-list .game-list-card .overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .65);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styling for each game list card image */
+.game-list-card:nth-child(1) {
+    background-image: url(../images/Consellations.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Styling for each game list card image */
+.game-list-card:nth-child(2) {
+    background-image: url(../images/beach.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Styling for each game list card image */
+.game-list-card:nth-child(3) {
+    background-image: url(../images/imagination.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Styling for each game list card image */
+.game-list-card:nth-child(4) {
+    background-image: url(../images/kitchen-fun.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Styling for each game list card image */
+.game-list-card:nth-child(5) {
+    background-image: url(../images/animal-Buddies.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Styling for each game list card image */
+.game-list-card:nth-child(6) {
+    background-image: url(../images/Little-dinosaur.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Styling for each game list card image */
+.game-list-card:nth-child(7) {
+    background-image: url(../images/aliens.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Styling for each game list card image */
+.game-list-card:nth-child(8) {
+    background-image: url(../images/Mermaid.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Styling for each game list card image */
+.game-list-card:nth-child(9) {
+    background-image: url(../images/Astronaut.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Styling for each game list card image */
+.game-list-card:nth-child(10) {
+    background-image: url(../images/Cowboys.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Styling for each game list card image */
+.game-list-card:nth-child(11) {
+    background-image: url(../images/Bedroom.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Styling for each game list card image */
+.game-list-card:nth-child(12) {
+    background-image: url(../images/savethebees.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Styling for the game list card title */
+.game-list-card h2 {
+    font-size: .75rem;
+    opacity: 1;
+}
+
+/* Styling for the coming soon block */
+.coming-soon-block {
+    height: 60px;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    pointer-events: none;
+}
+
+/* Styling for the coming soon block title */
+.coming-soon-block h3 {
+    font-size: 1.5rem;
+    color: var(--banner-color-one);
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+/* Media queries for different screen sizes */
+@media(min-width:768px) {
+
+    /* Adjust grid layout for larger screens */
+    .game-list-cards {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        margin-right: 10px;
+        margin-top: 20px;
+        grid-gap: 5px;
+    }
+
+    /* Adjust card size for larger screens */
+    .game-list .game-list-card {
+        height: 150px;
+        width: 150px;
+        margin-top: 10px;
+    }
+
+    /* Adjust title size for larger screens */
+    .game-list .game-list-card h2 {
+        font-size: 1rem;
+    }
+
+    /* Adjust height for coming soon block */
+    .coming-soon-block {
+        height: 100px;
+    }
+
+    /* Adjust title size for coming soon block */
+    .coming-soon-block h3 {
+        font-size: 2rem;
+    }
+}
+
+@media(min-width:1024px) {
+
+    /* Adjust grid layout for larger screens */
+    .game-list-cards {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        margin-top: 5px;
+        grid-gap: 5px;
+    }
+
+    /* Adjust card size for larger screens */
+    .game-list .game-list-card {
+        height: 180px;
+        width: 180px;
+        margin-top: 5px;
+    }
+
+    /* Adjust title size for larger screens */
+    .game-list .game-list-card h2 {
+        font-size: 1rem;
+    }
+
+    /* Adjust margin for coming soon block */
+    .coming-soon-block {
+        margin-top: 10px;
+    }
+
+    /* Adjust title size for coming soon block */
+    .coming-soon-block h3 {
+        font-size: 2rem;
+    }
+}
+
+@media(min-width:1440px) {
+
+    /* Adjust grid layout for larger screens */
+    .game-list-cards {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        margin-left: 40px;
+        grid-gap: 5px;
+    }
+
+    /* Adjust card size for larger screens */
+    .game-list .game-list-card {
+        height: 190px;
+        width: 190px;
+        margin-top: 15px;
+        margin-left: 10px;
+        align-self: center;
+    }
+
+    /* Adjust title size for larger screens */
+    .game-list .game-list-card h2 {
+        font-size: 1.2rem;
+    }
+
+    /* Adjust margin for coming soon block */
+    .coming-soon-block {
+        margin-top: 70px;
+    }
+
+    /* Adjust title size for coming soon block */
+    .coming-soon-block h3 {
+        font-size: 2rem;
+    }
+}
+
+@media(min-width:1920px) {
+
+    /* Adjust grid layout for larger screens */
+    .game-list-cards {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        margin-left: 40px;
+        grid-gap: 5px;
+    }
+
+    /* Adjust card size for larger screens */
+    .game-list .game-list-card {
+        height: 200px;
+        width: 200px;
+        margin-top: 15px;
+        margin-left: 0;
+        align-self: center;
+    }
+
+    /* Adjust title size for larger screens */
+    .game-list .game-list-card h2 {
+        font-size: 1.2rem;
+    }
+
+    /* Adjust margin for coming soon block */
+    .coming-soon-block {
+        margin-top: 20px;
+    }
+
+    /* Adjust title size for coming soon block */
+    .coming-soon-block h3 {
+        font-size: 2rem;
+    }
+}

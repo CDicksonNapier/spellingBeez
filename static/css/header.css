@@ -1,0 +1,193 @@
+/* Navigation menu */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  padding: 20px 20px;
+  width: 100%;
+  position: fixed;
+  background-color: #f1f1f1;
+  height: 75px;
+  z-index: 1000;
+}
+
+/* THe main spelling bee'z logo */
+.logo img {
+  height: 75px;
+  margin-top: 10px;
+}
+/* The logo on slide out menu */
+.slider-logo {
+  margin-bottom: 20px;
+}
+/* Slide out menu on small screens */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: var(--banner-color-one);
+  overflow-y: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* Slide out menu Links */
+.sidenav a {
+  text-decoration: none;
+  font-size: var(--header-font-size);
+  color: var(--font-color-one);
+  display: block;
+  transition: 0.3s;
+}
+/* Close button for slide out menu */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+/* Slide out menu button */
+.bgrMenu {
+  font-size: 30px;
+  cursor: pointer;
+  color: var(--banner-color-one);
+  border-radius: var(--rounded-edge);
+  margin-top: 10px;
+}
+/* Accounts button in the slide out menu */
+.accounts-Btn {
+  height: 40px;
+  width: 50%;
+  background-color: var(--banner-color-one);
+  text-align: center;
+  border-radius: var(--rounded-edge);
+  margin: 20px 0;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--font-color-one);
+}
+/* Accounts button link/text */
+.accounts-Btn a {
+  text-decoration: none;
+  color: var(--font-color-one);
+  font-size: var(--header-font-size-alt);
+  font-weight: 600;
+}
+/* Full navigation not displayed on small screens */
+.fullNav {
+  display: none;
+}
+.homeBtn {
+  display: none;
+}
+/* Tablet screen styling */
+@media (min-width: 768px) {
+  .fullNav {
+    display: none;
+  }
+}
+/* Desktop screen styling */
+@media (min-width: 1024px) {
+  /* Hidign the mobile menu */
+  header {
+    display: none;
+  }
+  /* Full navigation menu */
+  .fullNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    background-color: #f1f1f1;
+    z-index: 100;
+  }
+  /* Full navigation logo */
+  .fullNav .logo img {
+    margin-left: 20%;
+  }
+  /* Full navigation links */
+  .full-Nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    margin-right: 6%;
+  }
+  /* Full navigation link styling */
+  .full-Nav a {
+    text-decoration: none;
+    color: var(--banner-color-one);
+    font-size: 1.25rem;
+    font-weight: 700;
+    transition: var(--transition);
+  }
+  /* Full acount button */
+  .accounts-Btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    padding: 15px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: var(--rounded-edge);
+    color: white;
+  }
+  /* Full account button link */
+  .accounts-Btn a {
+    text-decoration: none;
+    color: var(--font-color-one);
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  /* Accounts button link */
+  .fullNav .full-Nav .accounts-full-Btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    padding: 15px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: var(--rounded-edge);
+    background-color: var(--banner-color-one);
+    text-decoration: none;
+    color: var(--font-color-one);
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+  .homeBtn {
+    display: none;
+  }
+  /* Laptop  */
+  @media (min-width: 1440px) {
+    /* Hover effect for the links */
+    .full-Nav a:hover {
+      opacity: 0.9;
+    }
+  }
+  /* Desktop  */
+  @media (min-width: 1920px) {
+    /* Hover effect for the links */
+    .full-Nav a:hover {
+      opacity: 0.9;
+    }
+  }
+}
